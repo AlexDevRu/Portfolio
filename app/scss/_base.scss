@@ -1,0 +1,66 @@
+@import "vars";
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Itim', sans-serif;
+	font-size: 18px;
+	color: $primary;
+	background-color: $back;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+input:focus, input:active,
+button:focus, button:active,
+textarea:focus, textarea:active {
+	outline: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+	&:hover {
+		color: $primary;
+	}
+}
+
+input, textarea {
+	padding: 18px 27px;
+	color: $primary;
+	border: none;
+}
+
+.title {
+	font-size: 36px;
+	text-align: center;
+}
+
+.container {
+	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 1210px;
+}
+
+@mixin wrapper($offset) {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: -$offset;
+}
