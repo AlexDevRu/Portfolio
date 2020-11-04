@@ -1,9 +1,0 @@
-// /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-//    readers do not read off random characters that represent icons */
-
-
-.#{$fa-css-prefix}-envelope-o:before { content: $fa-var-envelope-o; }
-// .#{$fa-css-prefix}-arrow-left:before { content: $fa-var-arrow-left; }
-// .#{$fa-css-prefix}-arrow-right:before { content: $fa-var-arrow-right; }
-.#{$fa-css-prefix}-github:before { content: $fa-var-github; }
-.#{$fa-css-prefix}-telegram:before { content: $fa-var-telegram; }
